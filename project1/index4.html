@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    .parent{
+        float: left;
+       padding: 20px;
+        margin: 50px;
+        float: left;
+       
+    }
+
+
+      .tooltip{
+       color: rgba(7, 83, 145, 0.736);
+       font-weight: bold;
+       font-family: Arial, Helvetica, sans-serif;
+       position: relative;
+       padding-top: 50px;
+      
+        
+    }
+    .tooltiptop{
+     
+       top: 0px;
+       left: -50px;
+       padding: 10px 20px;
+        color: white;
+        background-color: #5a5757;
+        margin: -70px;
+        border-radius: 10px;
+        visibility: hidden;
+       
+        
+    
+
+
+    }
+
+    .tooltiptop::after{
+        content: " ";
+    
+      position: absolute;
+      top: 75%;
+       left: 40%;
+      border-top: 10px solid #5a5757 ;
+      border-bottom: 10px solid transparent ;
+      border-left: 10px solid  transparent;
+      border-right: 10px solid transparent;
+           
+      
+    }
+
+    .tooltipright{
+        position: relative;
+        top: -40px;
+        left: 45px;
+        padding: 10px 20px;
+         color: white;
+         background-color: #5a5757;
+         margin: 15px;
+         border-radius: 10px;
+         visibility: hidden;
+       
+         
+     
+ 
+ 
+     }
+ 
+     .tooltipright::after{
+         content: " ";
+     
+       position: absolute;
+       top: 8px;
+        left: -19px;
+       border-top: 10px solid transparent ;
+       border-bottom: 10px solid transparent ;
+       border-left: 10px solid  transparent;
+       border-right: 10px solid #5a5757;
+            
+       
+     }
+
+     .tooltipbottom{
+        position: relative;
+        top: 0px;
+        left: -35px;
+        padding: 10px 20px;
+         color: white;
+         background-color: #5a5757;
+         margin: 15px;
+         border-radius: 10px;
+         visibility: hidden;
+        
+         
+     
+ 
+ 
+     }
+ 
+     .tooltipbottom::after{
+         content: " ";
+     
+       position: absolute;
+       top: -19px;
+        left: 40px;
+       border-top: 10px solid transparent;
+       border-bottom: 10px solid #5a5757 ;
+       border-left: 10px solid  transparent;
+       border-right: 10px solid transparent;
+            
+       
+     }
+
+     
+    .tooltipleft{
+        position: relative;
+        top: -40px;
+        left: -150px;
+        padding: 10px 20px;
+         color: white;
+         background-color: #5a5757;
+         margin: 15px;
+         border-radius: 10px;
+         visibility: hidden;
+      
+ 
+     }
+ 
+     .tooltipleft::after{
+         content: " ";
+     
+       position: absolute;
+       top: 10px;
+        left: 122px;
+       border-top: 10px solid transparent;
+       border-bottom: 10px solid transparent ;
+       border-left: 10px solid  #5a5757;
+       border-right: 10px solid transparent;
+            
+     }
+     .tooltip:hover .tooltipbottom {
+        visibility: visible;
+    
+     }
+
+     .tooltip:hover .tooltiptop{
+        visibility: visible;
+     }
+     .tooltip:hover .tooltipright{
+        visibility: visible;
+     }
+    .tooltip:hover .tooltipleft{
+        visibility: visible;
+    }
+     
+          
+    
+     
+    
+    
+   
+
+</style>
+
+<div class="parent">
+   
+    <div class="tooltip">Top
+    <div class="tooltiptop">Tooltip text</div>
+    </div>
+</div>
+
+<div class="parent">
+   <div class="tooltip">Right
+    <div class="tooltipright">Tooltip text</div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="tooltip">Bottom
+   
+    <div class="tooltipbottom">Tooltip text</div>
+    </div>
+</div>
+
+<div class="parent">
+   <div class="tooltip">Left
+    <div class="tooltipleft">Tooltip text</div>
+    </div>
+
+</div>
+
+<div class="clear"></div>
+
+
+</head>
+<body>
+
+    
+</body>
+</html>

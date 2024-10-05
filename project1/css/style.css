@@ -1,0 +1,281 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #fff;
+    width: 100%;
+    box-shadow:  0 8px 10px 0 rgba(0,0,0,0.5),0 8px 12px 0 rgba(0,0,0,0.5);
+   /*h shadow / v shadow /blur / spread /color /inset يعني الظل بتاعك خارجي ولا داخلي */
+   
+    position: fixed;
+    top: 0px;
+   z-index: 1;
+}
+nav ul{
+   padding: 0px;
+    list-style-type: none;
+
+    
+
+}
+nav ul li {
+    display: inline-block;
+   
+  
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    
+    display: inline-block;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 15px;
+    font-size: 15px;
+   
+}
+a:hover{
+    background-color:lightgrey;
+
+}
+span h3{
+    display: inline;
+}
+.rightlink{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+#brarchitects  article  {
+    padding: 0px;
+    position: relative;
+   
+}
+
+#brarchitects  article img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+ .heading{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    left: 37%;
+    top: 47%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 10px;
+   
+}
+
+.heading span{
+    background-color: rgba(0, 0, 0,0.7);
+    padding: 15px;
+    font-weight: bold;
+}
+
+#projects{
+    padding: 30px;
+}
+
+#projects  article{
+   width: calc(25% - 30px);
+    height: 200px;
+  
+ padding: 20px;
+  
+    margin: 10px;
+    float: left;
+    position: relative;
+
+        
+}
+#projects  article img{
+width: 300px;
+}
+
+
+
+.House{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+
+    
+}
+.proj{
+    font-weight: bold;
+    font-size: 20px;
+   margin-bottom: 10px;
+   
+    
+   
+}
+#about{
+    margin-top: 20px;
+    padding: 20px;
+}
+.abt{
+    font-weight: bold;
+    font-size: 20px;
+   margin-bottom: 10px;
+}
+
+.lorem{
+    padding: 10px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.persons{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: calc(25% - 30px);
+    float: left;
+    margin: 10px;
+    padding: 20px;
+
+}
+.persons img{
+    width: 300px;
+}
+.persons  .jop{
+    color: grey;
+}
+.persons  button{
+    width: 100%;
+    padding: 10px 0px;
+   
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    margin:10px 0px;
+    background-color: rgba(0, 0, 0, 0,5);
+    border: none;
+
+
+}
+button:hover{
+    background-color: lightgrey;
+}
+
+#contact p{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+input{
+    display: block;
+    padding: 10px;
+    margin: 15px;
+    width: 100%;
+    font-weight: bold;
+ border-color: rgba(0, 0, 0, 0.4);
+}
+form button{
+    padding: 15px;
+    margin: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+
+}
+form  button:hover{
+    color: black;
+}
+
+.map{
+    margin: 10px 0px;
+} 
+
+.map img{
+    width: 100%;
+    margin: 10px;
+   
+}
+#footer{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+   
+}
+#footer p{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+#footer p a{
+    color: white;
+}
+#footer  a:hover{
+    color: green;
+    background-color: black;
+    
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    
+    body{
+        height: 4130px;
+    }
+    
+    .persons{
+        width: calc(100% - 415px);
+    
+    }
+   #projects  article{
+        width: calc(100% - 400px);
+       
+   } 
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    
+    body{
+        height: 5248px;
+       
+    }
+    
+    
+    .persons{
+        width: calc(100% - 50px);
+    
+    }
+    
+   #projects  article{
+        width: calc(100% - 20px);
+       
+   }
+   nav{
+  
+    position: fixed;
+    top: 0px;
+   padding-top: 20px;
+   margin-bottom: 10px;
+    
+}
+
+
+ 
+ .rightlink{
+    display: none;
+   
+}
+
+
+}
